@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url('https://source.unsplash.com/random/1600x900');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.banner-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3em;
+  margin: 0;
+}
+
+.description {
+  font-size: 1.2em;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #1a73e8 50%);
+  background-size: 220%;
+  transition: background-position 0.3s;
+}
+
+a:hover {
+  background-position: 100%;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #0056b3 50%);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+}
